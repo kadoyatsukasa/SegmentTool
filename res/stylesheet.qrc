@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/">
+        <file>styleSheets/dark/NavigationBarDark.qss</file>
+    </qresource>
+</RCC>
