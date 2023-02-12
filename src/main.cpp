@@ -1,9 +1,12 @@
-#include <QApplication>
-#include "view/SegmentTool.h"
+#include "HikTools.h"
 
-int main(int argc, char *argv[]) {
+#include <QApplication>
+#pragma comment(lib, "user32.lib")
+
+int main(int argc, char *argv[])
+{
     QApplication a(argc, argv);
-    std::shared_ptr<SegmentTool> app= std::make_shared<SegmentTool>();
-    app->show();
-    return QApplication::exec();
+    HikTools w;
+    w.show();
+    return a.exec();
 }
